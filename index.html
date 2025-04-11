@@ -206,9 +206,9 @@
         /* Animierte Bienen */
         .bee-animation {
             position: relative;
-            height: 100px;
-            width: 200vw;
-            margin-left: calc(-50vw + 50%);
+            height: 300px;
+            width: 50vw;
+            margin-left: calc(-55vw + 50%);
             overflow: hidden;
             margin-top: 50px;
             margin-bottom: 50px;
@@ -216,46 +216,46 @@
         
         .bee {
             position: absolute;
-            width: 80px;
-            height: 100px;
+            width: 100px;
+            height: 50px;
             background-image: url('https://static.vecteezy.com/system/resources/thumbnails/059/658/890/small_2x/detailed-close-up-of-honey-bee-showcasing-its-delicate-wings-and-fuzzy-body-symbolizing-nature-beauty-and-pollination-png.png');
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
             filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.3));
-            animation: fly 15s infinite linear;
+            animation: fly 10s infinite linear;
         }
         
         @keyframes fly {
             0% {
-                top: 10px;
-                left: -1px;
+                top: 50px;
+                left: -50px;
                 transform: rotate(30deg) scale(1);
             }
             25% {
-                top: -1px;
+                top: 100px;
                 left: 25vw;
-                transform: rotate(-15deg) scale(1);
+                transform: rotate(-15deg) scale(0.9);
             }
             50% {
-                top: 10px;
+                top: 180px;
                 left: 50vw;
                 transform: rotate(15deg) scale(1.1);
             }
             75% {
-                top: -3px;
+                top: 80px;
                 left: 75vw;
-                transform: rotate(-20deg) scale(1);
+                transform: rotate(-20deg) scale(0.8);
             }
             100% {
-                top: 10px;
-                left: 50vw;
+                top: 50px;
+                left: 100vw;
                 transform: rotate(10deg) scale(1);
             }
         }
         
         .bee:nth-child(2) {
-            animation-delay: 2s;
+            animation-delay: 5s;
             transform: scale(0.7);
         }
         
@@ -272,7 +272,7 @@
         /* Features Abschnitt */
         .features {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
             margin-top: 40px;
         }
